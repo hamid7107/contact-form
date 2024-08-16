@@ -26,7 +26,95 @@
     </style>
   </head>
   <body>
-    
+    <main>
+      <div class="container">
+        <h2 class="form-head">Contact Form</h2>
+        <form action="">
+          <div class="row">
+            <div class="col">
+              <label for="fname">First Name <span class="star">*</span></label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="field text-field"
+              />
+            </div>
+            <div class="col">
+              <label for="lname">Last Name <span class="star">*</span></label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="field text-field"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="email"
+                >Email Address <span class="star">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="field email-field"
+              />
+            </div>
+          </div>
+          <div class="row" role="query-type" aria-labelledby="query-type">
+            <div class="feild-title">
+              <label for="query-type"
+                >Query Type <span class="star">*</span></label
+              >
+            </div>
+            <div class="col">
+              <div class="field radio-field">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="general"
+                  value="support"
+                />
+                <label for="general">General Enquiy</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="field radio-field">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="support"
+                  value="general"
+                />
+                <label for="support">Support Request</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="massage">Massage</label>
+              <textarea name="massage" id="massage"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="checkbox" name="role" id="role" />
+              <label for="role"
+                >I consent to being contacted by the team
+                <span class="star">*</span></label
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="button" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
     <script src="/assets/js/app.js"></script>
   </body>
 </html>
